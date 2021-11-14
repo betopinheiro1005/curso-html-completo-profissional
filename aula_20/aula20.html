@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 20 - Tags details e summary</title>
+		<style>
+			body{
+				font-family: Arial;
+				font-size: 18px;
+			}
+			summary::marker{
+				color:#f00;
+			}
+			details[open] summary::marker{
+				color:#00f;
+			}
+			.estilo1{
+				border:1px solid #000;
+				border-radius: 15px;
+				padding: 10px 50px;
+				margin: 20px;
+				width: 400px;
+				background-color: rgba(0,255,0,0.2);
+			}
+			#uf article{
+				border:1px solid #000;
+				border-radius: 15px;
+				padding: 10px 50px;
+				margin: 20px;
+				width: 400px;
+				background-color: lightgrey;
+			}
+		</style>
+	</head>
+	<body>
+
+		<details id="cursos">
+			<summary>Cursos do Nosso Canal</summary>
+			<article class="estilo1">
+				<h2>Cursos</h2>
+				<p>HTML Completo e Profissional</p>
+				<p>CSS</p>
+				<p>JavaScript</p>
+				<p>C++</p>
+				<p>QtCreator</p>
+				<p>Arduino</p>
+				<p>PHP/MySQL</p>
+			</article>
+		</details>
+
+		<details id="uf">
+			<summary>Estados do Brasil</summary>
+			<article>
+				<h2>Região Norte</h2>
+				<p>Acre - AC</p>
+				<p>Amapá - AP</p>
+				<p>Amazonas - AM</p>
+				<p>Pará - PA</p>
+				<p>Rio Grande do Norte - RN</p>
+				<p>Rondônia - RO</p>
+				<p>Roraima - RR</p>
+				<p>Tocantins - TO</p>
+			</article>
+			<article>
+				<h2>Região Nordeste</h2>
+				<p>Alagoas - AL</p>
+				<p>Bahia - BA</p>
+				<p>Ceará - CE</p>
+				<p>Maranhão - MA</p>
+				<p>Paraíba - PB</p>
+				<p>Pernambuco - PE</p>
+				<p>Piauí - PI</p>
+				<p>Sergipe - SE</p>
+			</article>
+			<article>
+				<h2>Região Centro-Oeste</h2>
+				<p>Goiás - GO</p>
+				<p>Mato Grosso - MT</p>
+				<p>Mato Grosso do Sul - MS</p>
+				<p>Distrito Federal - DF</p>
+			</article>
+			<article>
+				<h2>Região Sudeste</h2>
+				<p>Espírito Santo - ES</p>
+				<p>Minas Gerais - MG</p>
+				<p>Rio de Janeiro - RJ</p>
+				<p>São Paulo - SP</p>
+			</article>
+			<article>
+				<h1>Região Sul</h1>
+				<p>Paraná - PR</p>
+				<p>Rio Grande do Sul - RS</p>
+				<p>Santa Catarina - SC</p>
+			</article>
+		</details>
+
+	</body>
+</html>

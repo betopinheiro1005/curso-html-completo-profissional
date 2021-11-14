@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 78 - Formatando tabela com CSS</title>
+		<style>
+			*{
+				font-family: Arial;
+			}
+			table, th, td{
+				border: 1px solid #000;
+				padding: 10px;
+			}
+			table{
+				border-collapse: collapse;
+			}
+			thead{
+				color: #0a0;
+				background-color: #eee;
+			}
+			tbody{
+				color: #008
+			}
+			tfoot{
+				color: #f00;
+			}
+			.centralizado{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Fabricante</th>
+					<th>Modelo</th>
+					<th>Valor</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Honda</td>
+					<td>WRV</td>
+					<td>R$70.000,00</td>
+				</tr>
+				<tr>
+					<td>Volkswagen</td>
+					<td>Golf GTI</td>
+					<td>R$80.000,00</td>
+				</tr>
+				<tr>
+					<td>Ford</td>
+					<td>Ranger</td>
+					<td>R$90.000,00</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4" class="centralizado">Tabela de seminovos</td>
+				</tr>
+			</tfoot>
+		</table>
+
+	</body>
+</html>

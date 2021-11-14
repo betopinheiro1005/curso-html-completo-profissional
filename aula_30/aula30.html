@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 30 - Tag footer</title>
+		<style>
+			*{
+				font-family: Arial;
+				padding: 0px;
+				margin: 0px;
+				box-sizing: border-box;
+			}
+			#header{
+				position: absolute;
+				top: 0;
+				height: 90px;
+				width: 100%;
+				display:flex;
+				justify-content: space-around;
+				align-items: center;
+				background-color: #000;
+				color:#fff;
+				text-align: center;
+			}
+			#corpo{
+				position: relative;
+				top: 80px;
+				width: 100%;
+				height: 500px;
+				background-color: azure;
+				padding: 10px;
+			}
+			#corpo p{
+				display: block;
+				font-size: 18px;
+			}
+			#corpo h2{
+				padding: 20px 0px;
+			}
+			.rodape_final{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background-color: #000;
+				color:#fff;
+				padding: 5px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				text-align: center;
+			}
+			.art_rod{
+				border:1px solid #000;
+				width: 33.33%;
+				margin: 10px;
+			}
+			.img_rod{
+				width: inherit;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="header">
+			<h1>CBF Cursos</h1>
+		</div>
+
+		<article id="corpo">
+			<h2>Cursos disponíveis</h2>
+
+			<p>HTML / HTML5 / HTML Completo e Profissional</p>
+			<p>CSS</p>
+			<p>Javascript</p>
+			<p>C++</p>
+			<p>Qt Creator</p>
+			<p>PHP/MYSQL</p>
+			<p>Unity / C#</p>
+			<p>Photoshop</p>
+			<p>Flash</p>
+			<p>Arduino</p>
+		</article>
+
+		<footer class="rodape_final">
+			<article class="art_rod">
+				<img src="logo.png" class="img_rod" alt="Logo - CFB Cursos">
+			</article>
+			<article class="art_rod">
+				<h4>CFB Cursos, canal do Youtube<br>com cursos de informática avançada</h4>
+			</article>
+			<article class="art_rod">
+				<h4>www.youtube.com/cfbcursos</h4>
+			</article>
+		</footer>
+
+	</body>
+</html>

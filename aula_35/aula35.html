@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 35 - Formulários (parte 5)</title>
+		<style>
+			*{
+				font-family: Arial;
+				font-size: 18px;
+			}
+			.quebra{
+				display:block;
+			}
+			.espaco{
+				margin-bottom: 15px;
+			}
+   		input{
+				padding: 5px;
+				margin: 10px 0px;
+			}
+			input[type=submit]{
+				padding: 5px;
+				margin: 10px 0px;
+			}
+			.espaco_t{
+				margin-top: 15px;
+			}
+			form{
+				border:1px solid #000;
+				padding:10px;
+				border-radius:15px;
+				background-color:#eee;
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<form name="f_cadastro" action="#" method="get">
+
+			<label class="quebra">Mes:</label>
+			<input type="month" name="f_mes">
+
+			<label class="quebra espaco_t">Semana:</label>
+			<input type="week" name="f_semana">
+
+			<input type="hidden" name="canal" value="cfbcursos">
+			<input type="hidden" name="curso" value="html5">
+
+			<input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+		</form>
+
+	</body>
+</html>

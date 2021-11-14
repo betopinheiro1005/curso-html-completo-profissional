@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 39 - Formulários (parte 9)</title>
+		<style>
+			*{
+				font-family: Arial;
+			}
+			select, input, label{
+				margin-bottom: 10px;
+				font-size: 18px;
+				padding: 2px;
+			}
+			select, label{
+				display: block;
+			}
+			input[type=submit]{
+				padding: 5px;
+			}
+			.quebra{display:block;}
+			.espaco{
+				margin-bottom: 15px;
+			}
+			.espaco_t{
+				margin-top: 15px;
+			}
+			form{
+				border:1px solid #000;
+				padding:10px;
+				border-radius:15px;
+				background-color:#eee;
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+
+			<label for="f_cor">Cor</label>
+			<select name="f_cor" id="f_cor" size="2" multiple>
+				<option value="">Preto</option>
+				<option value="">Branco</option>
+				<option value="">Vermelho</option>
+				<option value="">Verde</option>
+				<option value="">Azul</option>
+			</select>
+
+			<label for="f_gen">Gênero</label>
+
+			<select name="f_gen" id="f_gen">
+				<option value="M">Masculino</option>
+				<option value="F">Feminino</option>
+			</select>
+
+			<input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+		</form>
+
+	</body>
+</html>

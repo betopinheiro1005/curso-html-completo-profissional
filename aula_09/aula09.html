@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			body{
+				font-family: Arial;
+				margin: 75px 0;
+				padding: 0;
+				display:flex;
+				justify-content: center;
+			}
+			header{
+				display: block;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				color: rgba(0,0,0,0.7);
+				background-color: lightgrey;
+				text-align: center;
+			}
+			header h1{
+				font-size: 1.75em;
+			}
+			article{
+				padding: 8px 35px 20px 35px;
+				border:1px solid #000;
+				border-radius: 10px;
+				background-color: #eee;
+				margin: 10px;
+				width: 70%;
+				height: 450px;
+			}
+			article h2{
+				color:#f00;
+			}
+			p{
+				font-size: 16px;
+			}
+			aside{
+				border:1px solid #000;
+				margin: 10px;
+				padding: 15px;
+				border-radius: 10px;
+				background-color: #333;
+				color:#fff;
+				height: 450px;
+				width: 15%;
+			}
+			.esquerda{
+				float:left;margin-right: 15px
+			}
+			.direita{
+				float:right;margin-left: 15px
+			}
+			aside a{
+				display: block;
+				color: white;
+				padding: 6px;
+			}
+			footer{
+				display: block;
+				width: 100%;
+				position: fixed;
+				bottom: 0;
+				padding: 10px 0px;
+				background-color: lightgrey;
+				text-align: center;
+			}
+		</style>
+		<title>Aula 09 - Tag aside da Nova Semântica</title>
+	</head>
+	<body>
+
+		<header>
+			<h1>Curso de HTML completo e profissional</h1>
+		</header>
+
+		<aside class="esquerda">
+			<a href="http://www.youtube.com/cfbcursos" target="_blank">Canal CFB Cursos</a>
+			<a href="https://cfbcursos.com.br/cursos-cfb/" target="_blank">Cursos gratuitos</a>
+			<a href="https://cfbcursos.com.br/apostilas-cfb-cursos/" target="_blank">Apostilas</a>
+		</aside>
+
+		<article>
+			<h2>Cursos disponíveis</h2>
+			<p>HTML / HTML5 / HTML Completo e Profissional</p>
+			<p>CSS</p>
+			<p>Javascript</p>
+			<p>C++</p>
+			<p>Qt Creator</p>
+			<p>PHP/MYSQL</p>
+			<p>Unity / C#</p>
+			<p>Photoshop</p>
+			<p>Flash</p>
+			<p>Arduino</p>
+		</article>
+
+		<aside class="direita">
+			<a href="https://www.horariodebrasilia.org/" target="_blank">Horário de Brasília</a>
+			<a href="https://github.com/cfbcursos/Arquivos_Curso_HTML_Completo_e_Profissional" target="_blank">Aulas no GitHub</a>
+		</aside>
+
+		<footer>
+			<address>
+				Autor: Bruno P. Campos<br>
+				Se inscreva em nosso <a href="http://www.youtube.com/cfbcursos" target="_blank">canal no Youtube</a>
+			</address>
+		</footer>
+
+	</body>
+</html>

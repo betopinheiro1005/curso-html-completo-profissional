@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 24 - Tag dialog - Parte 2</title>
+		<style>
+			button{
+				padding: 10px;
+				margin: 10px;
+				font-size: 18px;
+			}
+			dialog{
+				padding:0;
+				border:0;
+				border-radius:15px;
+				box-shadow:0 0 10px black;
+				flex-direction:column;
+			}
+			.dialog-titulo{
+				background-color:#eee;
+				border-top-left-radius:inherit;
+				border-top-right-radius:inherit;
+				padding:7px;
+				display:flex;
+				align-items:center;
+				border-bottom:1px solid #aaa;
+				height:40px;
+			}
+			.dialog-corpo{
+				background-color:#fff;
+				padding:7px;
+			}
+			.dialog-rodape{
+				background-color:#fff;
+				border-bottom-left-radius:inherit;
+				border-bottom-right-radius:inherit;
+				padding:7px;
+				border-top:1px solid #aaa;
+			}
+			#btn-fechar{
+				border:none;
+				border-radius:7px;
+				padding:7px;
+				cursor:pointer;
+				outline:none;   /* para não mostrar a borda padrão */
+				background-color: #ddd;
+				float:right;
+			}
+			#btn-fechar:hover{
+				background-color:#eee;
+			}
+		</style>
+		<script>
+
+			function fecharDialog(){
+				document.getElementById("btn_dialog").innerHTML="Abrir";
+				document.querySelector("#d1").removeAttribute("open");
+			}
+			function abrirDialog(){
+				document.getElementById("btn_dialog").innerHTML="Fechar";
+				document.querySelector("#d1").setAttribute("open","");
+			}
+			function controlaDialog(titulo,msg){
+				if(document.querySelector("#d1").hasAttribute("open")){
+					fecharDialog();
+				}else{
+					abrirDialog();
+					document.getElementById("titulo").innerHTML=titulo;
+					document.getElementById("msg1").innerHTML=msg;
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+
+		<!--
+			dialog parte 2
+			Criar uma caixa de diálogo mais estilosa e com botão fechar próprio
+			Script para abrir e fechar a caixa pelo mesmo "gatilho"
+		-->
+
+		<button onclick="controlaDialog('Curso de HTML','Curso de HTML completo e profissional do canal CFB Cursos')" id="btn_dialog">Abrir</button>
+
+		<dialog id="d1">
+			<div class="dialog-titulo">
+				<h3 id="titulo">Título</h3>
+			</div>
+			<div class="dialog-corpo">
+				<p>Caixa de dialogo nativa do HTML5</p>
+				<p id="msg1"></p>
+			</div>
+			<div class="dialog-rodape">
+				<button id="btn-fechar" onclick="fecharDialog()">Fechar</button>
+			</div>
+		</dialog>
+
+	</body>
+</html>

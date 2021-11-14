@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 41 - Formulários (parte 11)</title>
+		<style>
+			*{
+				font-family: Arial;
+			}
+			input, label{
+				margin: 10px;
+				font-size: 18px;
+				padding: 2px;
+			}
+			label{
+				display: block;
+			}
+			input[type=submit]{
+				padding: 10px;
+			}
+			fieldset{
+				margin: 10px 0px;
+			}
+			.quebra{display:block;}
+			.espaco{
+				margin-bottom: 15px;
+			}
+			.espaco_t{
+				margin-top: 15px;
+			}
+			form{
+				border:1px solid #000;
+				padding:10px;
+				border-radius:15px;
+				background-color:#eee;
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				<label for="f_nome">Nome:</label>
+				<input type="text" id="f_nome" name="f_nome" class="quebra">
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="f_telefone" name="f_telefone" class="quebra">
+			</fieldset>
+
+			<fieldset disabled>
+				<legend>Perguntas</legend>
+				<label for="f_carro">Possui carro?</label>
+				<input type="radio" id="f_carro" name="f_carro" value="s">Sim
+				<input type="radio" id="f_carro" name="f_carro" value="n">Não
+
+				<label for="f_carro">Possui casa própria?</label>
+				<input type="radio" id="f_casa" name="f_casa" value="s">Sim
+				<input type="radio" id="f_casa" name="f_casa" value="n">Não
+
+			</fieldset>
+
+			<input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+		</form>
+
+	</body>
+</html>

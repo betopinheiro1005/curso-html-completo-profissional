@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 22 - Tag dialog</title>
+		<script>
+			function abrirDialog(){
+				document.getElementById("d1").setAttribute("open","");
+			}
+			function fecharDialog(){
+				document.getElementById("d1").removeAttribute("open");
+			}
+		</script>
+	</head>
+	<body>
+
+		<button onclick="abrirDialog()">Abrir</button>
+		<button onclick="fecharDialog()">Fechar</button>
+
+		<!-- 'dialog' não é suportado em todos os browsers -->
+		<!-- O atributo 'open' em 'dialog' exibe a caixa de diálogo -->
+
+		<dialog id="d1" open>
+			<p><dfn title="Linguagem de marcação para web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizada na construção de páginas na Web</p>
+
+			<p><dfn><abbr title="Formatação para páginas web">CSS</abbr></dfn> Cascading Style Sheets recurso para adicionar estilos/formatações a um documento web</p>
+		</dialog>
+
+	</body>
+</html>

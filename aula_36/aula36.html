@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 36 - Formulários (parte 6)</title>
+		<style>
+			*{
+				font-family: Arial;
+				font-size: 17px;
+			}
+			.quebra{display:block;}
+			.espaco{
+				margin-bottom: 15px;
+			}
+			.espaco_t{
+				margin-top: 15px;
+			}
+			form{
+				border:1px solid #000;
+				padding:10px;
+				border-radius:15px;
+				background-color:#eee;
+				width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<form name="f_cadastro" action="#" method="get">
+			<!-- color, email, image -->
+
+			<label class="quebra">Selecione uma cor:</label>
+			<input type="color" name="f_cor">
+
+			<label class="quebra espaco_t">Digite seu email:</label>
+			<input type="email" name="f_email">
+
+			<!-- A imagem funciona como o botão submit -->
+
+			<input type="image" src="logo.png" alt="Logo - CFB Cursos" name="f_enviar2" class="quebra espaco_t">
+
+			<input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+		</form>
+
+	</body>
+</html>

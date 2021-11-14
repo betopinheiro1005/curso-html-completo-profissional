@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 25 - Tag div - Parte 2</title>
+		<style>
+			body{
+				margin:0px;
+				font-family: Arial;
+			}
+			*{
+				box-sizing: border-box;
+				padding:0px;
+			}
+			#cabecalho,#corpo,#rodape{
+				border:1px dotted #aaa;
+			}
+			#cabecalho{
+				position: absolute;
+				top:0px;
+				left:0px;
+				width: 100%;
+				height: 80px;
+				text-align: center;
+				background-color: #000;
+				color: #fff;
+			}
+			#corpo{
+				position: absolute;
+				top: 80px;
+				left: 0px;
+				width: 100%;
+			}
+			#caixa1,#caixa2,#caixa3{
+				width: 33.33%;
+				height: 700px;
+				text-align: center;
+			}
+			#caixa1{
+				position: absolute;
+				top:0;
+				left:0;
+				background-color: lightgreen;
+			}
+			#caixa2{
+				position: absolute;
+				top: 0;
+				left: 33.33%;
+				background-color: lightsteelblue;
+			}
+			#caixa3{
+				position: absolute;
+				left: 66.66%;
+				top: 0;
+				background-color: lightsalmon;
+			}
+			#texto{
+				position: absolute;
+				left: 0;
+				height: 200px;
+				top: 700px;
+			}
+			#rodape{
+				position: absolute;
+				top: 900px;
+				bottom: 0;
+				width: 100%;
+				height: 80px;
+				background-color: #000;
+				color:#fff;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!--
+			div parte 2
+			Vamos aprender a posicionar as divs com a propriedade position
+		-->
+
+		<div id="cabecalho">
+				<h1>CFB Cursos</h1>
+		</div>
+
+		<div id="corpo">
+				<div id="caixa1">
+					<h3>caixa 1</h3>
+				</div>
+				<div id="caixa2">
+					<h3>caixa 2</h3>
+				</div>
+				<div id="caixa3">
+					<h3>caixa 3</h3>
+				</div>
+				<div id="texto">
+					<p>Nesta aula vamos aprender a manipular divs, usando position, top, left, width, height.</p>
+					<p>Se ainda não for inscrito em nosso canal, se inscreva e clique no sininho</p>
+					<p>Siga-nos na nossas redes sociais, endereços na descrição do vídeo</p>
+				</div>
+		</div>
+
+		<div id="rodape">
+				<p>www.youtube.com/cfbcursos</p>
+				<p>cfbcursos.com</p>
+		</div>
+
+	</body>
+</html>

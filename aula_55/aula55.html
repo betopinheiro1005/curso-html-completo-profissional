@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 55 - tag iframe (parte 2)</title>
+		<style>
+			*{
+				font-family: Arial;
+			}
+			iframe{
+				width: 500px;
+				height: 370px;
+				border: none;
+				display: block;
+				margin-top: 30px;
+			}
+			#banner{
+				width: 600px;
+				height: 200px;
+				border: none;
+				display: block;
+				margin-bottom: 30px;
+			}
+		</style>
+		<script>
+			function trocaBanner(){
+				var num = Math.floor(Math.random()*5);
+				var imgs = ['b1.jpg', 'b2.jpg', 'b3.jpg', 'b4.jpg', 'b5.jpg'];
+				document.getElementById("banner").src=imgs[num];
+			}
+			function iniciar(){
+				trocaBanner();
+			}
+			window.addEventListener("load", iniciar);
+		</script>
+	</head>
+	<body>
+
+		<iframe src="" name="banner" id="banner"></iframe>
+
+		<a href="aula33.html" target="main">Aula 33</a>
+		<a href="https://www.youtube.com/cfbcursos" target="main">Site Canal</a>
+		<a href="https://w3.org/" target="main">W3</a>
+
+		<iframe src="" name="main"></iframe>
+
+	</body>
+</html>

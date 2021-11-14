@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 17 - Tag canvas</title>
+		<style>
+			canvas{
+				border:1px #000 solid;
+			}
+		</style>
+		<script>
+			function desenha() {
+				var canvas = document.getElementById('teleDesenho');
+				var ctx = canvas.getContext('2d');
+				ctx.fillRect(25, 25, 100, 100);
+			}
+		</script>
+	</head>
+	<body>
+
+		<canvas id="teleDesenho" width="500" height="500">
+			Seu browser não tem suporte ao elemento canvas!
+		</canvas>
+
+		<!-- Os elementos do canvas são manipulados pelo javascript -->
+
+		<script>desenha();</script>
+
+	</body>
+</html>

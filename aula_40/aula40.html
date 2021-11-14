@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 40 - Formulários (parte 10)</title>
+		<style>
+			*{
+				font-family: Arial;
+			}
+			select, input, label{
+				margin-bottom: 10px;
+				font-size: 18px;
+				padding: 2px;
+			}
+			select, label{
+				display: block;
+			}
+			input[type=submit]{
+				padding: 5px;
+			}
+			.quebra{display:block;}
+			.espaco{
+				margin-bottom: 15px;
+			}
+			.espaco_t{
+				margin-top: 15px;
+			}
+			form{
+				border:1px solid #000;
+				padding:10px;
+				border-radius:15px;
+				background-color:#eee;
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+
+			<label>Cores:</label>
+
+			<input list="f_cores" name="f_cor">
+
+			<datalist id="f_cores">
+				<option value="red">Vermelho</option>
+				<option value="green">Verde</option>
+				<option value="blue">Azul</option>
+				<option value="yellow">Amarelo</option>
+				<option value="white">Branco</option>
+				<option value="beige">Bege</option>
+			</datalist>
+
+			<label>Transportes:</label>
+
+			<input list="f_transportes" name="f_transporte">
+
+			<datalist id="f_transportes">
+				<option value="01">Carro</option>
+				<option value="02">Avião</option>
+				<option value="03">Navio</option>
+				<option value="04">Motocicleta</option>
+			</datalist>
+
+
+			<input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+		</form>
+
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 91 - Construindo página com layout FULL PAGE P8</title>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#banner">home</a></li>
+					<li><a href="#sobre">sobre</a></li>
+					<li><a href="#cursos">cursos</a></li>
+					<li><a href="#canal">canal</a></li>
+					<li><a href="#contato">contato</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="banner" class="banner">
+			<img src="banner.jpg" alt="Banner">
+		</section>
+
+		<section id="sobre" class="flexivel">
+			<article class="borda0" data-anima="esquerda">
+				Sobre o canal
+			</article>
+			<article class="borda0" data-anima="direita">
+				Sobre mim
+			</article>
+		</section>
+
+		<section id="cursos" class="flexivel">
+			<article class="borda0 conteinerCursos" data-anima="esquerda">
+				<img src="c1.jpg" alt="Curso de programa&ccedil;&atilde;o C#" class="mini" onclick="">
+				<img src="c2.jpg" alt="Curso de Arduino" class="mini" onclick="">
+				<img src="c3.jpg" alt="Curso de HTML Completo e Profissional" class="mini" onclick="">
+				<img src="c4.jpg" alt="Curso de Javascript" class="mini" onclick="">
+			</article>
+			<article class="borda0 conteinerCursos" data-anima="centro">
+				<img src="c5.jpg" alt="Curso de AppInventor" class="mini" onclick="">
+				<img src="c6.jpg" alt="Curso de Programa&ccedil;&atilde;o C++" class="mini" onclick="">
+				<img src="c7.jpg" alt="Curso de Qt Creator com C++" class="mini" onclick="">
+				<img src="c8.jpg" alt="Curso de Flash" class="mini" onclick="">
+			</article>
+			<article class="borda0 conteinerCursos" data-anima="direita">
+				<img src="c9.jpg" alt="Curso de 3D Unit com C#" class="mini" onclick="">
+				<img src="c10.jpg" alt="Curso de Photoshop" class="mini" onclick="">
+				<img src="c11.jpg" alt="Curso de PHP" class="mini" onclick="">
+				<img src="c12.jpg" alt="Curso de CSS" class="mini" onclick="">
+			</article>
+		</section>
+
+		<section class="parallax p1">
+			<article>
+
+			</article>
+		</section>
+
+		<section id="canal" class="flexivel">
+			<article class="borda0" data-anima="esquerda">
+				Imagem link canal
+			</article>
+			<article class="borda0" data-anima="direita">
+				Link direto para o canal
+			</article>
+		</section>
+
+		<section class="parallax p2">
+			<article>
+
+			</article>
+		</section>
+
+		<section id="contato" class="flexivel">
+			<article class="borda0" data-anima="esquerda">
+				Contato esquerda
+			</article>
+			<article class="borda0" data-anima="centro">
+				Contato centro
+			</article>
+			<article class="borda0" data-anima="direita">
+				Contato direita
+			</article>
+		</section>
+
+		<footer>
+
+		</footer>
+
+		<div id="janelaModal" class="janelaModal escondeJanelaModal">
+			<span id="btnFechar" class="fecharModal">x</span>
+			<img id="imgModal" class="" src="imgModal" alt="">
+			<img id="txtModal" class="" src="txtModal" alt="">
+		</div>
+
+		<script src="scripts.js"></script>
+
+	</body>
+</html>
