@@ -6,10 +6,10 @@
 
 ### Lista de aulas
 
-Aula 01 - Codificação básica
-Aula 02 - Tag P e mais regras e detalhes importantes HTML
-Aula 03 = Tags H, h1 até h6
-Aula 04 - Tag a - Âncora
+Aula 01 - Codificação básica  
+Aula 02 - Tag P e mais regras e detalhes importantes HTML  
+Aula 03 = Tags H, h1 até h6  
+Aula 04 - Tag a - Âncora  
 Aula 05 - Tag abbr - Abreviações  
 Aula 06 - Tag address - Informações de contato  
 Aula 07 - Tags area e map - Mapeando links  
