@@ -1,8 +1,7 @@
 # Curso de HTML - Completo e Profissional
 ## CFB Cursos (Bruno Pinho Campos)
 
-### Link dos vídeos
-<https://www.youtube.com/watch?v=BUpk68lggtY&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c>
+### [Vídeos do curso](https://www.youtube.com/watch?v=BUpk68lggtY&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c)
 
 ### Lista de aulas
 
